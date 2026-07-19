@@ -313,37 +313,38 @@ const HOTEL = { name: '麦岛住宿区（具体地址见私人订单）', lat: 3
 const DAYS = [
   { id: 0, label: '总览', color: '#0071e3', locations: [] },
   {
-    id: 1, label: 'D1 抵达', date: '周三｜城市东岸 → 啤博 → 台东',
-    title: '抵达日：海岸、啤酒与市场海鲜', color: '#ff9500',
+    id: 1, label: 'D1 抵达', date: '周三｜东岸 → 太平角 → 老城',
+    title: '抵达日：海岸与老建筑一路向西', color: '#ff9500',
     locations: [
       { name:'青岛站', lat:36.064393, lng:120.308409, type:'transport', time:'上午', desc:'抵达列车进站。直接去住宿地放大箱子；两人带背包出门。', detail:'到住宿地优先地铁/网约车，不拖箱子逛老城。具体车次、到站时间与座席见私人车票。', gmap:'Qingdao Railway Station' },
       { name:'麦岛住宿区', lat:36.0672, lng:120.4160, type:'hotel', time:'到站后', desc:'办理寄存或入住，短休息。', detail:'具体酒店名称、门牌和到店导航请从私人订单打开；同时确认连续入住无需换房，以及24日退房后可寄存行李。', gmap:'Maidao Metro Station Qingdao' },
-      { name:'住宿区附近简午餐', lat:36.0675, lng:120.4165, type:'food', time:'入住后', desc:'吃面、馄饨或家常菜，别在第一顿排队。', budget:'两人 ¥50–90', dianpingKeyword:'麦岛 简餐', gmap:'Maidao Metro Station Qingdao' },
+      { name:'住宿区附近简午餐', lat:36.0675, lng:120.4165, type:'food', time:'入住后', desc:'吃面、馄饨或家常菜，别在第一顿排队，给次日海鲜午餐留胃口。', budget:'两人 ¥50–90', dianpingKeyword:'麦岛 简餐', gmap:'Maidao Metro Station Qingdao' },
       { name:'燕儿岛山公园开放段', lat:36.054906, lng:120.400505, type:'spot', time:'13:10', desc:'只走明确开放的西侧/山下滨海段，海岸木栈道拍照。', detail:'截至7月14日，东侧心屿咖啡—观潮路段仍封闭；不要翻越围挡。若出发前仍封闭范围扩大，整段删除。', xhsKeyword:'青岛 燕儿岛公园 木栈道', gmap:'Yanerdashan Park Qingdao' },
-      { name:'奥帆中心海岸短停', lat:36.055703, lng:120.39114, type:'spot', time:'14:05', desc:'看城市海岸与帆船，只停30分钟，不走完整大环线。', budget:'免费', gmap:'Qingdao Olympic Sailing Center' },
-      { name:'青岛啤酒博物馆', lat:36.07847, lng:120.340657, type:'spot', time:'15:15', desc:'必去。买基础普通票即可，A馆+B馆，约90–120分钟。', budget:'¥60/人', detail:'7–8月07:30–19:30开放，18:30停止入场。基础票已含两小杯品鉴和啤酒豆，不需要为沉浸剧游或多馆票加价。', reserve:'https://www.tsingtaomuseum.com/', gmap:'Tsingtao Beer Museum' },
-      { name:'营口路海鲜市场', lat:36.0866, lng:120.3494, type:'food', time:'17:35', desc:'先逛一圈再买；问清单价、重量和总价，活鲜称重前看秤。', budget:'两人海鲜约 ¥180–320', detail:'大众点评当前显示06:30–22:00。不要让市场摊贩替你指定加工店；先问加工费再购买。', dianping:'https://www.dianping.com/shop/l5Dgv8vleoiW47u7', gmap:'Yingkou Road Seafood Market Qingdao' },
-      { name:'二姐啤酒屋（主选）', lat:36.0869, lng:120.3497, type:'drink', time:'18:00', desc:'市场对面，适合来料加工；下单前逐项确认蒸、辣炒、烧烤的加工费。', budget:'加工＋啤酒约 ¥80–160', detail:'大众点评当前4.2分、约1500条评价，人均约78元，11:00–次日02:00。备选：同心源啤酒屋（市场西门斜对面）。', dianping:'https://www.dianping.com/shop/l7f5YlxJdJLhw9Mn', gmap:'Taicheng 7th Road Qingdao' },
-      { name:'同心源啤酒屋（备选）', lat:36.0872, lng:120.3491, type:'drink', time:'—', desc:'市场西门斜对面；主选排队或报价不清时再看。', budget:'人均参考 ¥69', detail:'大众点评当前4.0分、约1000条评价，10:00–次日02:00。', dianping:'https://www.dianping.com/shop/G30ReVLddxJy9WG6', gmap:'Daming Road 100 Qingdao' },
-      { name:'返回住宿区', lat:36.0672, lng:120.4160, type:'hotel', time:'20:15', desc:'地铁/网约车回住宿区。当天目标约12,000–16,000步。到店导航见私人订单。', gmap:'Maidao Metro Station Qingdao' }
+      { name:'奥帆中心海岸短停', lat:36.055703, lng:120.39114, type:'spot', time:'14:10', desc:'看城市海岸与帆船，只走开放岸线，不走完整大环线。', budget:'免费', gmap:'Qingdao Olympic Sailing Center' },
+      { name:'海遇园', lat:36.048776, lng:120.35824, type:'spot', time:'15:20', desc:'从奥帆短程公交/网约车向西，坐在太平角观海台阶和绿地休息。', budget:'免费', detail:'只留30–40分钟，不再叠加第三海水浴场；当天累了可直接去老城。', xhsKeyword:'青岛 海遇园 螃蟹上岸', gmap:'Taipingjiao 1st Road Qingdao' },
+      { name:'圣弥厄尔教堂外观', lat:36.06801, lng:120.315649, type:'spot', time:'16:20', desc:'只看外观与浙江路街景，不买室内票；傍晚有游客，不强求空镜。', budget:'外观免费', gmap:'St. Michael Cathedral Qingdao' },
+      { name:'广西路—沂水路旧建筑', lat:36.0656, lng:120.3214, type:'spot', time:'16:55', desc:'总督府旧址外围、老邮电局等建筑外观，顺路向栈桥方向边走边看。', budget:'免费', detail:'17:25停止加点，不去信号山、小鱼山或收费故居。', gmap:'Yishui Road Qingdao' },
+      { name:'栈桥岸上观景位', lat:36.061974, lng:120.314381, type:'spot', time:'17:35', desc:'只从开放岸线拍青岛湾和回澜阁，不把登桥当作刚需。', budget:'免费', detail:'桥体或沙滩仍封闭就不进入围挡，停留不超过20分钟。', gmap:'Zhanqiao Pier Qingdao' },
+      { name:'老城机动晚餐', lat:36.0662, lng:120.3172, type:'food', time:'18:10', desc:'就近吃水饺、锅贴、青岛家常菜或面食，不为网红店排队。', budget:'两人 ¥80–150', dianpingKeyword:'中山路 青岛菜 晚餐', gmap:'Zhongshan Road Qingdao' },
+      { name:'返回住宿区', lat:36.0672, lng:120.4160, type:'hotel', time:'19:30', desc:'地铁/网约车回住宿区。当天目标约12,000–16,000步。到店导航见私人订单。', gmap:'Maidao Metro Station Qingdao' }
     ]
   },
   {
-    id: 2, label: 'D2 老城', date: '周四｜老城西 → 海军馆 → 太平角',
-    title: '老建筑、军舰与城市海岸', color: '#34c759',
+    id: 2, label: 'D2 双馆', date: '周四｜海军馆 → 营口路 → 啤博',
+    title: '双博物馆与下午海鲜', color: '#34c759',
     locations: [
-      { name:'住宿区出发', lat:36.0672, lng:120.4160, type:'hotel', time:'08:20', desc:'早餐后公交/网约车直达栈桥外围，开始一路向东。', gmap:'Maidao Metro Station Qingdao' },
-      { name:'栈桥岸上观景位', lat:36.061974, lng:120.314381, type:'spot', time:'09:05', desc:'从岸上拍青岛湾和回澜阁，不把登桥当作刚需。', budget:'免费', detail:'截至7月14日，栈桥桥体及西侧沙滩仍封闭；如未恢复，只在开放岸线取景。', gmap:'Zhanqiao Pier Qingdao' },
-      { name:'圣弥厄尔教堂外观', lat:36.06801, lng:120.315649, type:'spot', time:'09:30', desc:'只看外观与浙江路街景，不买室内票。', budget:'外观免费', gmap:'St. Michael Cathedral Qingdao' },
-      { name:'广西路—沂水路旧建筑', lat:36.0656, lng:120.3214, type:'spot', time:'09:50', desc:'总督府旧址外围、老邮电局等建筑外观，边走边看。', budget:'免费', detail:'10:20开始向海军博物馆移动；不要临时加信号山、小鱼山或收费故居。', gmap:'Yishui Road Qingdao' },
-      { name:'中国人民解放军海军博物馆', lat:36.054694, lng:120.325742, type:'spot', time:'10:40', desc:'10:40安检候场，11:00按预约入馆；室内＋陆上装备＋只登1艘舰。', budget:'免费，11:00预约时段', detail:'建议13:30前离馆。馆内本身步数很大，只选一艘最想看的舰艇，避免把当日推过2万步。', reserve:'https://hjbwg.com/', gmap:'Naval Museum Qingdao' },
-      { name:'琴屿路海岸', lat:36.053626, lng:120.325326, type:'spot', time:'13:35', desc:'利用博物馆临海出口拍军舰、礁石和小青岛方向，控制在20–30分钟。', budget:'免费', xhsKeyword:'青岛 海军博物馆 琴屿路', gmap:'Qinyu Road Qingdao' },
-      { name:'莱阳路/大学路机动午餐', lat:36.0609, lng:120.3278, type:'food', time:'14:05', desc:'就近吃水饺、面或青岛家常菜；不为网红店排长队。', budget:'两人 ¥80–150', dianpingKeyword:'大学路 青岛菜 午餐', gmap:'Daxue Road Qingdao' },
-      { name:'鲁迅公园西段', lat:36.054806, lng:120.327975, type:'spot', time:'—', desc:'仅在15:00前吃完午餐且当时步数低于12,000时加入，30分钟止步。', budget:'免费', detail:'默认不走。海军博物馆本身步数很大，优先把体力留给海遇园的坐下看海。', gmap:'Lu Xun Park Qingdao' },
-      { name:'海遇园', lat:36.048776, lng:120.35824, type:'spot', time:'16:05', desc:'太平角观海台阶和绿地，坐下来休息拍照。', budget:'免费', detail:'与第三海水浴场视作同一站，总共不超过60分钟。', xhsKeyword:'青岛 海遇园 螃蟹上岸', gmap:'Taipingjiao 1st Road Qingdao' },
-      { name:'第三海水浴场岸线', lat:36.05031, lng:120.360653, type:'spot', time:'16:35', desc:'看城市天际线和海面；不进入私人咖啡店座位区。', budget:'免费', xhsKeyword:'青岛 第三海水浴场 看海', gmap:'Third Bathing Beach Qingdao' },
-      { name:'返回住宿区', lat:36.0672, lng:120.4160, type:'hotel', time:'17:40', desc:'公交回麦岛住宿区，晚餐在附近解决。目标15,000–18,000步。', gmap:'Maidao Metro Station Qingdao' },
-      { name:'超步数删减', lat:36.054806, lng:120.327975, type:'transport', time:'—', desc:'当天达到16,000步或博物馆晚出：先删鲁迅公园，再删三浴；海遇园保留坐下休息。', gmap:'Qingdao' }
+      { name:'住宿区出发', lat:36.0672, lng:120.4160, type:'hotel', time:'09:35', desc:'普通模式睡足、吃好早餐再出发；平台车直达海军博物馆。', gmap:'Maidao Metro Station Qingdao' },
+      { name:'中国人民解放军海军博物馆', lat:36.054694, lng:120.325742, type:'spot', time:'10:40', desc:'10:40安检候场，11:00按预约入馆；室内＋陆上装备＋只登1艘舰。', budget:'免费，11:00预约时段', detail:'13:20左右离馆，最晚13:30。馆内本身步数很大，只选一艘最想看的舰艇。', reserve:'https://hjbwg.com/', gmap:'Naval Museum Qingdao' },
+      { name:'前往营口路', lat:36.0866, lng:120.3494, type:'transport', time:'13:20', desc:'离馆后平台车/出租车直达市场；午餐直接安排海鲜加工。', gmap:'Yingkou Road Seafood Market Qingdao' },
+      { name:'营口路海鲜市场', lat:36.0866, lng:120.3494, type:'food', time:'13:45', desc:'下午场客流比晚高峰低，先逛一圈再买；问清单价、重量和总价。', budget:'两人海鲜约 ¥180–320', detail:'营口路本来就是晚市型市场，下午并非不新鲜；提前到13:45主要是避暑期晚高峰、给加工留时间。只买2–3种快熟海鲜。', dianping:'https://www.dianping.com/shop/l5Dgv8vleoiW47u7', gmap:'Yingkou Road Seafood Market Qingdao' },
+      { name:'二姐啤酒屋（主选）', lat:36.0869, lng:120.3497, type:'drink', time:'14:05', desc:'把海鲜午餐吃完再去啤博；15:05必须结账离开。', budget:'加工＋啤酒约 ¥80–160', detail:'优先蛤蜊/扇贝、虾等快熟做法，点单前确认加工费和出餐时间。14:15仍未下单就换同心源或附近明码标价店；啤酒少量。', dianping:'https://www.dianping.com/shop/l7f5YlxJdJLhw9Mn', gmap:'Taicheng 7th Road Qingdao' },
+      { name:'前往啤酒博物馆', lat:36.07847, lng:120.340657, type:'transport', time:'15:05', desc:'体力正常可步行，想稳妥就短车；目标15:20抵达，预留安检和洗手间。', gmap:'Tsingtao Beer Museum' },
+      { name:'青岛啤酒博物馆（16:00场）', lat:36.07847, lng:120.340657, type:'spot', time:'15:25', desc:'请立即抢23日16:00–18:30场；提前候场，约16:00–18:15参观。', budget:'待抢票｜按各自身份购票', detail:'截图显示的前三个剩余时段都与11:00海军馆冲突，只有16:00场可保两馆。截图页面是学生票，两人请分别购买符合身份的票种。', reserve:'https://www.tsingtaomuseum.com/', gmap:'Tsingtao Beer Museum' },
+      { name:'同心源啤酒屋（备选）', lat:36.0872, lng:120.3491, type:'drink', time:'—', desc:'市场西门斜对面；主选出餐慢或报价不清时再看。', budget:'人均参考 ¥69', dianping:'https://www.dianping.com/shop/G30ReVLddxJy9WG6', gmap:'Daming Road 100 Qingdao' },
+      { name:'返回住宿区', lat:36.0672, lng:120.4160, type:'hotel', time:'18:30', desc:'离馆后直接地铁/网约车回住宿区，晚间自由休息。普通模式约9,000–13,000步。', gmap:'Maidao Metro Station Qingdao' },
+      { name:'Lolita清晨支线（可选）', lat:36.06801, lng:120.315649, type:'spot', time:'—', desc:'仅天气好且愿意早起时启用：07:10出发，07:50–09:20在教堂—浙江路—沂水路快拍，10:20停止并去海军馆。', budget:'公共外观免费', detail:'会增加约3,000–5,000步和2.5小时在外时间；22日已看过老城，累或闷热就不重复。', gmap:'St. Michael Cathedral Qingdao' },
+      { name:'琴屿路海岸快拍（备选）', lat:36.053626, lng:120.325326, type:'spot', time:'—', desc:'仅13:10前离馆时停10分钟；13:20仍在馆内就直接去营口路。', budget:'免费', xhsKeyword:'青岛 海军博物馆 琴屿路', gmap:'Qinyu Road Qingdao' },
+      { name:'超时删减', lat:36.053626, lng:120.325326, type:'transport', time:'—', desc:'13:30后离馆：删琴屿路并短车去市场；14:15仍未完成点单就换能快速出餐的明码标价店；15:05无论如何离开餐桌去啤博。', gmap:'Qingdao' }
     ]
   },
   {
@@ -375,7 +376,7 @@ function overviewContent() {
 <div class="info-grid">
   <div class="info-card"><div class="label">住宿</div><div class="value">麦岛片区<br>门牌见私人订单</div></div>
   <div class="info-card"><div class="label">交通锚点</div><div class="value">D1上午抵达<br>D3晚间返程</div></div>
-  <div class="info-card"><div class="label">硬预约</div><div class="value">海军馆<br>23日11:00</div></div>
+  <div class="info-card"><div class="label">23日双馆</div><div class="value">海军馆11:00<br>啤博16:00待抢</div></div>
   <div class="info-card"><div class="label">现场预算</div><div class="value">两人约<br>¥650–1,050</div></div>
 </div>
 <div class="card guide-good" onclick="go(9)"><div class="name">📘 打开衣食住行全攻略</div><div class="desc">天气穿衣、逐段交通、三餐、Lolita拍照、轮渡变量、厕所休息、避坑、预算和应急都在同一页。</div></div>
@@ -386,13 +387,13 @@ function overviewContent() {
 <div class="card"><div class="name">先保三个锚点</div><div class="desc">啤酒博物馆、海军博物馆、营口路买海鲜＋啤酒屋加工。其余均可因天气和体力删除。</div></div>
 <div class="card"><div class="name">7月24日不是“进崂山景区”</div><div class="desc">只乘618公交看仰口—垭口沿途山海，不进收费游览区、不下青山渔村、不爬山。</div></div>
 <div class="section-head">消费提醒</div>
-<div class="card"><div class="name">啤博只买基础票</div><div class="desc">¥60/人已经覆盖A馆+B馆和基础品鉴，不升级沉浸剧游。</div></div>
+<div class="card guide-alert"><div class="name">⚠️ 立刻抢23日16:00–18:30</div><div class="desc">这是剩余四个时段里唯一不与11:00海军馆冲突的一档。截图是学生票页面，两人分别按实际身份购买正确票种。</div></div>
 <div class="card"><div class="name">海鲜先问三件事</div><div class="desc">市场单价与重量、加工方式、每道加工费。报价不清就换摊或换店，并保留付款记录。</div></div>
 <div class="section-head">天气与封闭</div>
 <div class="card"><div class="name">当前预报：24日风险最高</div><div class="desc">截至7月18日，22–23日约28–29℃、闷热并可能有雷阵雨；24日约31–33℃且雷雨风险较高。21日晚必须复查，强降雨或停运直接取消崂山。</div></div>
 <div class="section-head">可选变量</div>
 <div class="card"><div class="name">🎀 Lolita：23日老城清晨优先</div><div class="desc">07:50前到教堂—沂水路，避开10:00后的暑期人潮；只建议轻量化搭配，不穿大裙撑登舰。</div></div>
-<div class="card"><div class="name">⛴️ 轮渡/游船：优先22日奥帆支线</div><div class="desc">只选14:10前结束的正规观光航次，并替换燕儿岛或奥帆步行；23日启用则必须删太平角海岸，不能两头都要。</div></div>
+<div class="card"><div class="name">⛴️ 轮渡/游船：只留22日</div><div class="desc">用正规观光航次替换燕儿岛、海遇园或老城其中一段；23日已有两个硬预约，不再安排乘船。</div></div>
 <div class="section-head">图例</div>
 <div class="legend">
   <div class="legend-item"><div class="legend-dot" style="background:var(--tint-red)"></div>餐厅</div>
@@ -404,7 +405,7 @@ function overviewContent() {
 
 function guideContent() {
   return `
-<div class="hero"><div class="guide-kicker">All-in-one guide</div><h1>青岛随身全攻略</h1><p class="subtitle">只看这一页即可执行 · 信息核验至2026.07.18</p></div>
+<div class="hero"><div class="guide-kicker">All-in-one guide</div><h1>青岛随身全攻略</h1><p class="subtitle">只看这一页即可执行 · 信息核验至2026.07.19</p></div>
 <div class="guide-nav">
   <a class="guide-chip" href="#guide-weather">天气穿衣</a>
   <a class="guide-chip" href="#guide-transport">逐段交通</a>
@@ -417,12 +418,13 @@ function guideContent() {
 
 <div class="guide-stack">
   <div class="guide-card guide-alert">
-    <h3>先记住四件事</h3>
+    <h3>先记住五件事</h3>
     <ol>
-      <li><strong>23日11:00海军博物馆</strong>是不可移动锚点，10:40前到安检口。</li>
+      <li><strong>立刻抢23日16:00–18:30啤博票</strong>；这是目前唯一不撞11:00海军馆的可用时段。</li>
+      <li><strong>23日11:00海军博物馆</strong>不动，10:40前到安检口；普通模式09:35出发，15:20前到啤博。</li>
       <li><strong>24日雷雨风险最高</strong>；强降雨、道路管制或618停运，直接取消崂山。</li>
       <li><strong>暑期工作日也会拥挤</strong>；老城拍照尽量在08:30前完成，10:00–15:00不要追求空镜。</li>
-      <li>轮渡、Lolita完整拍摄和太平角海岸<strong>不能全部叠加</strong>，每次只启用一个变量。</li>
+      <li>轮渡只在22日作为路线替换项；23日禁止再加轮渡、鲁迅公园或太平角。</li>
     </ol>
   </div>
 
@@ -445,18 +447,19 @@ function guideContent() {
 
   <div class="guide-card" id="guide-transport">
     <h3>逐段交通：最少折返版本</h3>
-    <h4>D1｜青岛站 → 酒店 → 东岸 → 啤博 → 台东</h4>
+    <h4>D1｜青岛站 → 住宿区 → 燕儿岛 → 奥帆 → 太平角 → 老城</h4>
     <ul>
-      <li><strong>青岛站到酒店：</strong>带大箱子优先网约车；公共交通可3号线转2号线至麦岛附近，再步行。</li>
-      <li><strong>酒店到燕儿岛/奥帆：</strong>短程公交或网约车；只走开放海岸，不为完整环线增加步数。</li>
-      <li><strong>奥帆到啤博：</strong>网约车最省心；或地铁2号线向台东方向，出站后步行。</li>
-      <li><strong>啤博到营口路：</strong>约1公里级别，体力正常可步行；买海鲜后直接去市场周边啤酒屋。</li>
+      <li><strong>青岛站到住宿区：</strong>带大箱子优先网约车；公共交通可3号线转2号线至麦岛附近，再按私人订单导航。</li>
+      <li><strong>住宿区到燕儿岛/奥帆：</strong>短程公交或网约车；只走开放海岸，不为完整环线增加步数。</li>
+      <li><strong>奥帆到海遇园：</strong>短程公交/网约车，避免沿海连续硬走；海遇园只留30–40分钟。</li>
+      <li><strong>海遇园到老城：</strong>短车去教堂外观，再按教堂→沂水路→栈桥单向步行；18:10老城晚餐。</li>
     </ul>
-    <h4>D2｜酒店 → 老城 → 海军馆 → 太平角 → 酒店</h4>
+    <h4>D2｜住宿区 → 海军馆 → 营口路 → 啤博 → 住宿区</h4>
     <ul>
-      <li>早上网约车直达教堂/栈桥外围最节省时间；公共交通为2号线转3号线至青岛站片区。</li>
-      <li>老城建筑至海军馆以步行为主，10:20停止加点，10:40到安检口。</li>
-      <li>海军馆离馆后若去太平角，可从人民会堂片区乘3号线至太平角公园附近，避免沿海全程硬走。</li>
+      <li><strong>普通模式：</strong>09:35从住宿区平台车直达海军馆，10:40到安检口；不再重复22日老城。</li>
+      <li><strong>Lolita支线：</strong>只有天气好才07:10出发，07:50–09:20老城快拍；10:20停止一切加点并去海军馆。</li>
+      <li>13:20左右离开海军馆并短车到营口路；13:45买海鲜、14:05加工午餐，避开暑期晚高峰。</li>
+      <li>15:05必须离开餐桌；营口路到啤博约1公里，体力正常可步行，想稳妥就短车，15:20抵达。</li>
     </ul>
     <h4>D3｜酒店 → 浦里 → 仰口 → 618 → 原路回城</h4>
     <ul>
@@ -469,24 +472,23 @@ function guideContent() {
 
   <div class="guide-card" id="guide-food">
     <h3>吃喝：每一顿怎么选</h3>
-    <div class="route-option"><span class="tag recommended">D1必吃</span><strong>营口路市场＋啤酒屋加工</strong><p>两个人控制在2–3种海鲜：蛤蜊/扇贝类、虾、当日合适的鱼或蟹。先问每斤单价、重量、总价，再问每道加工费；市场约￥180–320，加工与啤酒约￥80–160。</p></div>
-    <div class="route-option"><span class="tag">D1午餐</span><strong>酒店附近简餐</strong><p>面、馄饨、排骨米饭或家常菜，两人￥50–90；啤博品鉴不能当正餐。</p></div>
-    <div class="route-option"><span class="tag">D2午餐</span><strong>大学路/莱阳路机动解决</strong><p>鲅鱼水饺、锅贴、青岛家常菜或面食，两人￥80–150；不为网红店排队超过20分钟。</p></div>
+    <div class="route-option"><span class="tag recommended">D2必吃</span><strong>13:45营口路市场＋14:05啤酒屋加工</strong><p>营口路是晚市型市场，下午并非只剩尾货；提前吃是为避开暑期晚高峰。两个人控制在2–3种快熟海鲜：蛤蜊/扇贝类、虾等。先问单价、重量、总价，再问每道加工费；15:05必须离桌去啤博。</p></div>
+    <p class="source-note">不换团岛：团岛品类和性价比不错，但位于老城西南，与16:00啤博反向。营口路傍晚本来就是主客流，摊位用加氧、放冰等维持鲜活；这次提前到13:45主要为避开晚高峰。<a href="https://news.qingdaonews.com/wap/2018-11/28/content_20249636.htm" target="_blank">晚市调查</a> · <a href="https://www.dailyqd.com/guanhai/391818_1.html" target="_blank">2025整治</a></p>
+    <div class="route-option"><span class="tag">D1午餐</span><strong>住宿区附近简餐</strong><p>面、馄饨、排骨米饭或家常菜，两人￥50–90；第一天不排队，给次日海鲜午餐留胃口。</p></div>
     <div class="route-option"><span class="tag">D3补给</span><strong>早餐预备＋17:00早晚餐</strong><p>前一晚准备饭团/面包、香蕉和水；山路车上不吃味道重的食物。回城后在住宿区附近吃午饭；17:00左右吃早晚餐或打包轻食，给夜车带水和小零食。</p></div>
     <h4>海鲜与啤酒避坑</h4>
     <ul>
       <li>不要让摊贩替你指定加工店；不买不明价、死蟹当活蟹、称重后掉包的商品。</li>
       <li>蛤蜊优先辣炒或原汁，虾优先白灼，鱼问清按条还是按斤；先少点，不够再加。</li>
-      <li>第二天要早起和登舰，D1啤酒适量；饮酒后不要自行骑车。</li>
+      <li>D2先吃海鲜再进啤博；啤酒屋只少量喝，馆内还有品鉴。饮酒后不要自行骑车。</li>
     </ul>
   </div>
 
   <div class="guide-card guide-good" id="guide-photo">
     <h3>🎀 Lolita拍照方案</h3>
     <p><strong>如果需要租裙＋妆造：</strong>先和老城店家确认07:40前可开门、可寄存日常衣物，并09:35前结束拍摄、10:05前换回轻便衣服。全妆造若需60–90分钟，必须再提前；店家无法保证时间就改自带轻量穿搭。</p>
-    <div class="route-option"><span class="tag recommended">最推荐</span><strong>23日07:50–09:20｜教堂外观＋浙江路＋沂水路</strong><p>红瓦石墙和欧式建筑最适合Lolita，也能避开10点后的主客流。需要把酒店出发提前到07:10左右；09:20收工后转栈桥岸上短停，10:20开始向海军馆移动。</p></div>
-    <div class="route-option"><span class="tag">海景备选</span><strong>23日16:40–18:10｜海遇园＋第三海水浴场</strong><p>适合浅色、海军风或古典海洋配色，傍晚光线比中午柔和。它与原行程顺路，但若专门回酒店换大套装，会增加约60–90分钟折返。</p></div>
-    <div class="route-option"><span class="tag">零折返快拍</span><strong>22日11:40–12:10｜酒店花园/外景</strong><p>入住后先询问酒店是否允许住客拍摄；适合快速试妆和全身照，不保证能使用商业摄影设备。</p></div>
+    <div class="route-option"><span class="tag recommended">天气好才启用</span><strong>23日07:50–09:20｜教堂外观＋浙江路＋沂水路</strong><p>红瓦石墙和欧式建筑最适合Lolita，也能避开10点后的主客流；但会比普通模式多在外约2.5小时、增加3,000–5,000步。累或闷热就09:35直接去海军馆。</p></div>
+    <div class="route-option"><span class="tag">省体力备选</span><strong>22日16:20–17:25｜教堂外观＋沂水路</strong><p>正好随D1主线经过，不需要23日早起；缺点是暑期傍晚游客更多、难拍空镜。适合自带轻量裙装，不建议大妆造。</p></div>
     <h4>穿搭现实限制</h4>
     <ul>
       <li>推荐轻量连衣裙、小裙撑或无裙撑、防滑低跟鞋；另带一双能走路的鞋。</li>
@@ -502,8 +504,8 @@ function guideContent() {
     <h3>⛴️ 轮渡/游船变量</h3>
     <p>这里把“轮渡”按正规海上观光航线设计，不把未确认班次的传统通勤轮渡写进主线。官方2026年信息确认奥帆中心、青岛湾栈桥、青岛轮渡等旅游码头及多条“海上看青岛”航线在运营，但每天具体航班受天气、海况和售票影响。</p>
     <p><strong>不去码头“碰运气”：</strong>只有当天官方售票页或客服明确显示航班、开船码头和返航时间时，这个变量才存在。观光船不等于免费横渡，也不保证在黄岛下船。</p>
-    <div class="route-option"><span class="tag recommended">22日优先</span><strong>奥帆中心观光船</strong><p>只选<strong>14:10前结束、总耗时不超过60分钟</strong>的航次；它替换燕儿岛长走或奥帆岸上停留，结束后直接去啤博。14:10仍未下船就会压缩啤博时间，因此不买更晚班次。</p></div>
-    <div class="route-option"><span class="tag">23日替代</span><strong>青岛湾/轮渡旅游码头航线</strong><p>必须在海军馆13:30前离馆后再决定。启用后删除太平角、海遇园和第三浴场，直接把下午交给乘船与返程；不能同时安排Lolita完整拍摄支线。</p></div>
+    <div class="route-option"><span class="tag recommended">仅22日</span><strong>奥帆中心观光船</strong><p>只选<strong>17:00前结束、总耗时不超过90分钟</strong>的正规航次；它替换燕儿岛长走、海遇园或老城中的一段，绝不叠加。</p></div>
+    <div class="route-option"><span class="tag">23日禁用</span><strong>双馆预约优先</strong><p>11:00海军馆和16:00啤博之间只安排营口路海鲜午餐和转场；当天不去码头、不追任何临时航次。</p></div>
     <h4>启用条件</h4>
     <ul>
       <li>正规售票、实名安检、明确返航时间；提前30分钟到码头。</li>
@@ -518,7 +520,7 @@ function guideContent() {
     <ul>
       <li>22日入住时确认连续入住无需换房，并24日退房后继续寄存大箱子。</li>
       <li>每天只背小包；房卡套里不要放身份证。酒店地址单独截屏，手机没网时可给司机看。</li>
-      <li>每天至少安排一次坐下休息：D1酒店/啤博，D2海军馆室内＋海遇园，D3地铁与回酒店午休。</li>
+      <li>每天至少安排一次坐下休息：D1住宿区＋海遇园，D2海军馆室内＋海鲜午餐＋啤博候场，D3地铁与回住宿区午休。</li>
       <li>厕所优先在酒店、地铁付费区外、啤博、海军馆和正规商场解决；进入长海岸或618前先去一次，不赌沿途设施。</li>
     </ul>
   </div>
@@ -526,8 +528,8 @@ function guideContent() {
   <div class="guide-card" id="guide-budget">
     <h3>两人现场预算</h3>
     <ul>
-      <li><strong>D1 ￥480–790：</strong>简餐、啤博基础票、海鲜、加工啤酒、市内交通。</li>
-      <li><strong>D2 ￥250–460：</strong>三餐/补给、市内交通；海军馆免费。</li>
+      <li><strong>D1 ￥180–330：</strong>简餐、晚餐与市内交通；可选船票另计。</li>
+      <li><strong>D2 ￥440–760：</strong>啤博按实际票种、海鲜、加工啤酒与市内交通；海军馆免费。</li>
       <li><strong>D3 ￥220–380：</strong>早餐补给、地铁公交、午晚餐、去北站交通。</li>
       <li><strong>合计约￥650–1,050</strong>，不含交通与住宿、Lolita服务、临时购物和可选船票。</li>
     </ul>
@@ -840,8 +842,8 @@ function locCard(loc, dayIdx, seq) {
 }
 
 const DAY_FIELD_NOTES = {
-  1: `<div class="guide-card guide-alert"><h3>今日红线｜14:30离开海岸</h3><p>不管是否启用轮渡，14:30左右都应向啤酒博物馆移动，目标15:15到馆。轮渡只能替换燕儿岛/奥帆的海岸时间，不叠加。</p><p><strong>补给/厕所：</strong>酒店先解决；啤博离馆前再去；晚餐店收尾。普通餐厅排队超过20–30分钟就换店。</p></div>`,
-  2: `<div class="guide-card guide-alert"><h3>今日红线｜10:20停止老城加点</h3><p>10:40到海军博物馆安检口，11:00入馆。Lolita是早晨变量：09:35收工、10:05前换回轻便衣服；来不及就不做完整妆造。</p><p><strong>补给/厕所：</strong>早餐吃足，10:20前在馆外吃完小点心；海军馆离馆前解决。达16,000步先删鲁迅公园，再删三浴。</p></div>`,
+  1: `<div class="guide-card guide-alert"><h3>今日红线｜17:25停止老城加点</h3><p>22日不再去啤博和营口路。轮渡只能替换燕儿岛、海遇园或老城中的一段；17:25停止加点，18:10左右吃晚餐。</p><p><strong>补给/厕所：</strong>住宿区先解决；奥帆商圈可补水；老城晚餐店再去。达到14,000步先删海遇园，再缩短栈桥。</p></div>`,
+  2: `<div class="guide-card guide-alert"><h3>今日红线｜13:20 / 15:05 / 15:20</h3><p>普通模式09:35出发、10:40到海军馆安检；13:20左右离馆去营口路；15:05必须结束海鲜午餐；15:20到啤博，16:00按时入馆。Lolita支线另加10:20停止老城。</p><p><strong>补给/厕所：</strong>早餐吃足；海军馆离馆前解决。13:30后离馆先删琴屿路；14:15仍未点完菜就换能快速出餐的明码标价店。</p></div>`,
   3: `<div class="guide-card guide-alert"><h3>今日红线｜09:45 / 11:30 / 12:30 / 18:15</h3><p>09:45未上618就取消垭口往返；11:30前必须上返程；12:30前离开仰口；16:30结束一切备选；18:15是离店绝对最晚线。</p><p><strong>补给/厕所：</strong>前一晚备早餐；上618前在浦里/仰口解决，往返2–3小时不假设有可靠厕所。17:00早晚餐或打包轻食上夜车。</p></div>`
 };
 
